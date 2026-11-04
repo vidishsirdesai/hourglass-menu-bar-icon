@@ -26,7 +26,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func startAnimation() {
         // Triggers the updateIcon function every 0.5 seconds
-        timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(updateIcon), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateIcon), userInfo: nil, repeats: true)
     }
     
     @objc func updateIcon() {
